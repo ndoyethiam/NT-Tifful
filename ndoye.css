@@ -1,0 +1,448 @@
+*{
+	margin:0;
+	padding:0;
+	
+	font-family: 'Akaya Telivigala', cursive;
+     text-align: justify;
+}
+body{
+	margin:10px auto;
+	text-align: left;
+display: flex;
+
+}
+ .home{
+    height:800px;
+    width: 100%;
+    display: flex;
+    animation:home 20s infinite;
+}
+@keyframes home{
+    0%{
+        background-image: url(pexels-asad-photo-maldives-169193.jpg);
+    }
+    25%{
+        background-image: url(pexels-chan-walrus-941861.jpg);
+    }
+    100%{
+        background-image: url(pexels-maria-orlova-4916557.jpg);
+    }
+    30%{
+        background-image: url(pexels-prem-pal-singh-602750.jpg);
+    }
+    15%{
+    background-image: url(pexels-lucian-potlog-3566120.jpg);
+    }
+    55%{
+    	background-image: url(edvin-johansson-rlwE8f8anOc-unsplash.jpg);
+    }
+}
+.content{
+	max-width: 800px;
+	text-align: left;
+	margin:auto;
+
+}
+
+
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(kelsey-curtis--27u_GzlAFw-unsplash.jpg);
+	height:100vh;
+	background-size:cover;
+
+}
+.pre1{
+        background-image: url(Novotel.jpg);
+        width: 100%;
+    }
+    .navbar .max-width{
+
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-content: auto;
+}
+.logo a{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+}
+.logo span{
+    color: #000;
+}
+.menu li{
+    display: inline-block;
+}
+.menu{
+    padding-top: 10px;
+}
+.menu li a{
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 25px;
+    transition: color 1s;
+
+}
+
+.menu li a:hover{
+    color: black;
+    }
+    .pre{
+        background-color:pink;
+        font-family:'Akaya Telivigala', cursive;
+    font-size: 30px;
+  
+
+ul{
+	float:right; 
+	list-style-type:none; 
+	color:orange;
+}
+
+ul li{
+	display:inline-block;
+}
+
+ul li a{
+	text-decoration:none;/
+	color:orange;
+	padding:5px 20px; 
+	border:1px solid transparent; 
+	transition:0.6s ease; 
+}
+
+ul li a:hover{/
+	background-color:white;
+	color:black;
+}
+
+ul li.active a{
+	background-color:white;
+	color:black;
+}
+
+#logo{
+	float:left;
+	width:150px;/*La largeur*/
+	height:auto;/* La taille*/
+	font-size:40px;
+	color:red;
+}
+
+.main{
+	max-width:12OOpx;
+	margin:auto;
+}
+
+.title{/* Pour disposer et dimensionner Bienvenu a novotel*/
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.title h1{/* Mettre une couleur et definir la taille*/
+	color:white;
+	font-size:70px;
+}
+
+.partie{
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+
+video{
+	position:absolute;
+	top:100px;
+	right:90px;
+	width:80%;
+	height:100%;
+	padding:100px;
+	margin-right:100px;
+}
+.ndoye{
+	margin-left: 100px;
+	padding: 100px;
+	background:white;
+	text-align: justify;
+	background:url(Novotel.jpg);
+}
+/*********************************************/
+#slideshow{
+	position: relative;
+	width: 640px;
+	height: 310px;
+	padding: 15px;
+	margin: 0 auto 2em;
+	border:1px solid #ddd;
+	background:linear-gradient(#fff,#fff 20%, #eee 80%,#ddd);
+	border-radius: 2px 2px 2px 2px;
+		box-shadow: 0 0 3px rgba(0,0,0,0.2);
+
+}
+#slideshow:before,
+#slideshow:after{
+	position: absolute;
+	bottom: 16px;
+	z-index: 50%;
+	height: 20px;
+	width: 50px;
+	content: " ";
+	background:rgba(0,0,0,0.1);
+	border-radius: 50px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.4),0 20px 10px rgba(0,0,0, 0.7);
+
+}
+#slideshow:bebore{
+	left: 0;
+	transform: rotate(-4deg);
+}
+#slideshow:after{
+	right: 0;
+	transform: rotate(4deg);
+}
+#slideshow.container{
+	position: relative;
+	width: 640px;
+	height:310px;
+	overflow: hidden;
+}
+#slideshow.container:after{
+	position: absolute;
+	bottom: 0; left: 0;
+	content: 100px;
+	width: 100px;
+	height: 1px;
+	background:#999;
+}
+#slideshow.slider{
+	position: absolute;
+	left: 0; top:0;
+	width: 400px;
+	height: 310px;
+}
+#slideshow figure{
+	position: absolute;
+	display: block;
+	content: " ";
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+#slideshow figcaption{
+	position: absolute;
+	left: 0;right: 0;bottom: 5px;
+	padding: 20px;
+	margin: 0;
+	border-top: 1px solid rgba(225,225,225);
+	text-align: center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: Georgia, times, serif;
+	background:#fff;
+	background:rgba(225,225,225,0.3);
+}
+
+@keyframes slider {
+	0%, 20% , 100%{left: 0}
+	25%, 45%      {left:-100}
+	50%, 70%      {left: -200%}
+	75%, 95%      {left: -300%}
+}
+#slideshow .slider{
+	animation: slider 32s infinite;
+}
+#timeline{
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	height: 1px;
+	animation: timeliner 32s infinite;
+	background:#fff;
+	background:rgba(215,98,13, .3);
+	width: 0;
+}
+@keyframes timeliner{
+	0%, 25%, 50%, 100%{width: 0; }
+	20%, 45%, 70%, 90% {width: 640px;}
+}
+@keyframes figcaptionner{
+	0%, 25%, 50%, 75%, 100%{bottom: -55px;}
+	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%{bottom: 5px;}
+}
+
+
+#slideshow figcaption{
+	animation: figcaptionner 32s infinite;
+}
+
+/****************/   
+
+
+.pre{
+	background:url('pexels-jaymantri-6492.jpg');
+	width: 100%;
+	height:100%;
+}
+.pree{
+	background-image: url('novotel_dakar_02.jpg');
+}
+.letter <p{
+	<text-align: justify-all;
+}
+/**********************************************************************/
+.fatou{
+	width: 100%;
+	display: flex;
+	background:white;
+
+}
+.child-left{
+	width: 25%;
+	background-color:crimson;
+	height: 500px;
+	margin: 0px 10px;
+	padding: 25px;
+
+}
+.image{
+
+	border-radius: 100%;
+	height: 40%;
+	border: 3px dotted white;
+	object-fit: cover;
+	box-shadow:  10px 10px 18px  white;
+	
+
+}
+.child-center{
+
+	width: 75%;
+	background-color:pink;
+	height: 500px;
+	display: flex;
+	padding: 10px;
+}
+.child-right{
+	width: 25%;
+	background-color:crimson;
+	height:500px;
+	margin: 0px 10px;
+}
+
+.footer{
+	height: 50px;
+	background-color: crimson;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	padding: auto auto;
+}
+.info1{
+	height: 100%;
+	width: 50%;
+	background-color: white;
+}
+.info2{
+	margin-left: 10px;
+	background:url('pexels-klaus-nielsen-6287324.jpg');
+	width: 50%;
+	background-color: black;
+	padding: 10px;
+}
+.info21{
+	margin-top: 10px;
+	width: 100%;
+	height: 30%;
+	background-color: white;
+
+
+}
+
+
+
+
+.mn::after{
+    content: ">";
+    font-size: 20px;
+    font-weight: 600;
+    background-image: url('saad-khan-425b2PhNuHA-unsplash.jpg');
+}
+
+.sous{
+    display: none;
+    position: absolute;
+}
+
+.sous li{
+    border: 2px solid #bdc3c7;
+    float: none;
+    text-align: center;
+    width: 100%;
+    background-color: #e74c3c;
+}
+.navbar .menu li:hover .sous{ 
+        display: block;
+}
+
+.oussou{
+	padding:100px;
+	margin-top: 30%;
+	margin-right: 30%;
+
+}
+	
+}
+.oussou p{
+	text-align: center;
+	color: #414141;
+	font-size: 23px;
+	font-family: Roboto Slab;
+	letter-spacing: 0.3px;
+	line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
